@@ -4,7 +4,11 @@ jobs:
       language: python
       python:
        - "3.8"
+      env:
+        global:
+          - TRAVIS_TOKEN=UNrj0n8-9lkFoaK29emFNg
       arch: amd64
       dist: focal
       script:
-        - python hello_world.py
+        - curl -s -X POST -H "Content-Type: application/json" -H "Travis-API-Version: 3" -H "Authorization: token UNrj0n8-9lkFoaK29emFNg" -d '{"request": {"branch": "main"}}' https://api-staging-dev2.travis-ci.com/repo/Arthana-Haridas/PR-test/requests
+
