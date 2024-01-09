@@ -6,7 +6,7 @@ jobs:
        - "3.8"
       env:
         global:
-          - TRAVIS_TOKEN=$TRAVIS_TOKEN
+          - TRAVIS_TOKEN=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
       arch: amd64
       dist: focal
       script:
