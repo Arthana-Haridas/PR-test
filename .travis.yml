@@ -10,11 +10,10 @@ jobs:
       arch: amd64
       dist: focal
       script:
-        - script:
-  - |
-    curl -s -X POST \
-      -H "Content-Type: application/json" \
-      -H "Travis-API-Version: 3" \
-      -H "Authorization: token UNrj0n8-9lkFoaK29emFNg" \
-      -d '{"request": {"branch": "main"}}' \
-      https://api-staging-dev2.travis-ci.com/repo/Arthana-Haridas/PR-test/requests
+        - |
+          curl -s -X POST \
+            -H "Content-Type: application/json" \
+            -H "Travis-API-Version: 3" \
+            -H "Authorization: token UNrj0n8-9lkFoaK29emFNg" \
+            -d '{"request": {"branch": "main"}}' \
+            https://api-staging-dev2.travis-ci.com/repo/Arthana-Haridas/PR-test/requests
